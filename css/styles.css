@@ -468,10 +468,13 @@
   left: 15px;
 }
 
+<<<<<<< HEAD
 .card__price-link {
   text-decoration: none;
 }
 
+=======
+>>>>>>> 77f1638 (fix card padding)
 .card__price-button {
   font-style: normal;
   font-weight: 900;
@@ -482,9 +485,13 @@
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+<<<<<<< HEAD
   padding: 5px 9px 5px 9px;
   color: #ffffff;
   background-color: #42ba96;
+=======
+  color: #ffffff;
+>>>>>>> 77f1638 (fix card padding)
   border-radius: 100px;
 }
 
@@ -513,12 +520,18 @@
 .card__sipnosis {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: 8px;
   font-size: 16px;
   line-height: 24px;
 }
 
 .card__hr {
+=======
+}
+
+hr {
+>>>>>>> 77f1638 (fix card padding)
   margin-top: 20px;
 }
 
@@ -552,6 +565,12 @@
   .card__main-card {
     margin: 20px;
   }
+<<<<<<< HEAD
+=======
+  .search__input {
+    width: 285%;
+  }
+>>>>>>> 77f1638 (fix card padding)
 }
 
 @media screen and (min-width: 1024px) {
@@ -562,6 +581,12 @@
   .card__main-card {
     margin: 20px;
   }
+<<<<<<< HEAD
+=======
+  .search__input {
+    width: 288%;
+  }
+>>>>>>> 77f1638 (fix card padding)
 }
 
 @media screen and (min-width: 1200px) {
