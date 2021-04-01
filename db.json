@@ -3,7 +3,7 @@
       {
         "id": 1,
         "price": "$49/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "The standard Lorem Ipsum passage, used since the 1500s",
         "sipnosis": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
         "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
@@ -13,7 +13,7 @@
       {
         "id": 2,
         "price": "$60/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Section 1.10.32 of de Finibus Bonorum et Malorum",
         "sipnosis": "when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
         "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
@@ -23,7 +23,7 @@
       {
         "id": 3,
         "price": "$35/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "1914 translation by H. Rackham",
         "sipnosis": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
@@ -33,7 +33,7 @@
       {
         "id": 4,
         "price": "$87/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Section 1.10.33 of de Finibus Bonorum et Malorum",
         "sipnosis": "t was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.",
         "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
@@ -43,7 +43,7 @@
       {
         "id": 5,
         "price": "$50/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "1914 translation by H. Rackham",
         "sipnosis": "and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
@@ -53,7 +53,7 @@
       {
         "id": 6,
         "price": "$57/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "What is Lorem Ipsum?",
         "sipnosis": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         "avatar": "https://randomuser.me/api/portraits/women/3.jpg",
@@ -63,7 +63,7 @@
       {
         "id": 7,
         "price": "$100/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Why do we use it?",
         "sipnosis": "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
         "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
@@ -73,7 +73,7 @@
       {
         "id": 8,
         "price": "$25/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Where does it come from?",
         "sipnosis": "content here', making it look like readable English. Many desktop publishing packages and web page editors now.",
         "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
@@ -83,7 +83,7 @@
       {
         "id": 9,
         "price": "$15/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Where can I get some?",
         "sipnosis": "use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
         "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
@@ -93,7 +93,7 @@
       {
         "id": 10,
         "price": "$77/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "1914 translation by H. Rackham",
         "sipnosis": "Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.",
         "avatar": "https://randomuser.me/api/portraits/women/5.jpg",
@@ -103,7 +103,7 @@
       {
         "id": 11,
         "price": "$40/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Lorem ipsum dolor sit amet",
         "sipnosis": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
         "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
@@ -113,7 +113,7 @@
       {
         "id": 12,
         "price": "$36/MON",
-        "image": "https://picsum.photos/640/426",
+        "image": "https://picsum.photos/300/200",
         "title": "Consectetur adipiscing elit, quisque nisl eros,",
         "sipnosis": "Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden",
         "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
