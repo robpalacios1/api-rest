@@ -18,7 +18,7 @@
     <title>Cards</title>
   </head>
 
-  <body>
+  <body class="body">
     <!-- header -->
 
     <header class="header js-header js-sticky">
@@ -60,13 +60,14 @@
 
     <section class="search">
       <div class="container">
-        <div class="search__icon">
-          <i class="fas fa-search"></i>
-        </div>
         <div class="search__button">
-          <button>Search</button>
+          <input class="search__input" type="text" placeholder="Search" />
+          <div class="search__icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <span class="search__results">123 RESULTS</span>
+          <button class="search__button-search">Search</button>
         </div>
-        <input class="search__input" type="text" placeholder="Search" />
       </div>
     </section>
 
