@@ -478,7 +478,10 @@
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  padding: 5px 9px 5px 9px;
   color: #ffffff;
+  background-color: #42ba96;
+  text-decoration: none;
   border-radius: 100px;
 }
 
@@ -507,9 +510,12 @@
 .card__sipnosis {
   display: flex;
   justify-content: center;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-hr {
+.card__hr {
   margin-top: 20px;
 }
 
@@ -543,9 +549,6 @@ hr {
   .card__main-card {
     margin: 20px;
   }
-  .search__input {
-    width: 285%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -555,9 +558,6 @@ hr {
   }
   .card__main-card {
     margin: 20px;
-  }
-  .search__input {
-    width: 288%;
   }
 }
 
