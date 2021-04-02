@@ -99,7 +99,6 @@
 }
 
 @media screen and (min-width: 992px) {
-<<<<<<< HEAD
   .card {
     &__content {
       display: grid;
@@ -108,33 +107,15 @@
     &__main-card {
       margin: 20px;
     }
-=======
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card__main-card {
-    margin: 20px;
->>>>>>> d9bb86973bf95d8b9892d7415e70f6ae5822c3cd
   }
 }
 
 @media screen and (min-width: 1024px) {
-<<<<<<< HEAD
   .card {
     &__content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
-=======
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card {
->>>>>>> d9bb86973bf95d8b9892d7415e70f6ae5822c3cd
     &__main-card {
       margin: 20px;
     }

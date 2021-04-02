@@ -104,11 +104,7 @@
 }
 
 @media screen and (min-width: 992px) {
-<<<<<<< HEAD
   .card__content {
-=======
-  .container {
->>>>>>> d9bb86973bf95d8b9892d7415e70f6ae5822c3cd
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -118,11 +114,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-<<<<<<< HEAD
   .card__content {
-=======
-  .container {
->>>>>>> d9bb86973bf95d8b9892d7415e70f6ae5822c3cd
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
