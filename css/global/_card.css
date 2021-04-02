@@ -106,7 +106,7 @@
 .card__not-found {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .card__left {
@@ -158,6 +158,10 @@
   border-radius: 6px;
 }
 
+.card__right {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .card__content {
     display: grid;
@@ -165,6 +169,12 @@
   }
   .card__main-card {
     margin: 20px;
+  }
+  .card__not-found {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card__right {
+    display: block;
   }
 }
 
