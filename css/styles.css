@@ -468,6 +468,10 @@
   left: 15px;
 }
 
+.card__price-link {
+  text-decoration: none;
+}
+
 .card__price-button {
   font-style: normal;
   font-weight: 900;
@@ -481,7 +485,6 @@
   padding: 5px 9px 5px 9px;
   color: #ffffff;
   background-color: #42ba96;
-  text-decoration: none;
   border-radius: 100px;
 }
 
