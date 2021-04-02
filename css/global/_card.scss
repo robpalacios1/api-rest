@@ -77,9 +77,11 @@
     margin-top: 8px;
     font-size: 16px;
     line-height: 24px;
+    color: #6b7c93;
   }
   &__hr {
     margin-top: 20px;
+    border: 2px solid #f3f7fb;
   }
   &__main-footer {
     display: flex;
@@ -93,11 +95,49 @@
     height: 25px;
   }
   &__name {
-    margin-top: 10px;
-    margin-right: 120px;
+    margin-top: 17px;
+    margin-right: 77px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #6b7c93;
+    opacity: 0.7;
   }
   &__date {
-    margin-top: 10px;
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #6b7c93;
+    opacity: 0.7;
+  }
+  &__load {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__load-more {
+    height: 65px;
+    border-radius: 5px;
+    width: 87%;
+    border: none;
+    color: $blue-dark;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 26px;
+    border: 1px solid #d9e2ef;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
   }
   &__not-found {
     margin-top: 30px;
@@ -161,6 +201,10 @@
     &__main-card {
       margin: 20px;
     }
+    &__name {
+      margin-top: 17px;
+      margin-right: 65px;
+    }
     &__not-found {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -179,6 +223,10 @@
     }
     &__main-card {
       margin: 20px;
+    }
+    &__name {
+      margin-top: 17px;
+      margin-right: 68px;
     }
   }
 }
