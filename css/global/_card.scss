@@ -99,23 +99,23 @@
 }
 
 @media screen and (min-width: 992px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card__main-card {
-    margin: 20px;
+  .card {
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__main-card {
+      margin: 20px;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .card {
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
     &__main-card {
       margin: 20px;
     }
