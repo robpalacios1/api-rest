@@ -96,6 +96,55 @@
   &__date {
     margin-top: 10px;
   }
+  &__not-found {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__left {
+    margin-top: 95px;
+  }
+  &__title-image {
+    justify-content: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #12263f;
+  }
+  &__subtitle {
+    margin-top: 23px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__button-align {
+    display: flex;
+    justify-content: center;
+  }
+  &__button-safety {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    right: 15px;
+    top: 7px;
+    padding: 12px 15px 13px 15px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background: #335eea;
+    border-radius: 6px;
+  }
 }
 
 @media screen and (min-width: 992px) {
