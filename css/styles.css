@@ -527,11 +527,14 @@
 }
 
 .card__hr {
+<<<<<<< HEAD
 =======
 }
 
 hr {
 >>>>>>> 77f1638 (fix card padding)
+=======
+>>>>>>> d9bb869 (fix double html code)
   margin-top: 20px;
 }
 
@@ -566,11 +569,14 @@ hr {
     margin: 20px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   .search__input {
     width: 285%;
   }
 >>>>>>> 77f1638 (fix card padding)
+=======
+>>>>>>> d9bb869 (fix double html code)
 }
 
 @media screen and (min-width: 1024px) {
@@ -582,11 +588,14 @@ hr {
     margin: 20px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   .search__input {
     width: 288%;
   }
 >>>>>>> 77f1638 (fix card padding)
+=======
+>>>>>>> d9bb869 (fix double html code)
 }
 
 @media screen and (min-width: 1200px) {
