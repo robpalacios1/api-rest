@@ -110,7 +110,9 @@ searchButton.addEventListener("click", () => {
         `;
         }
 
-      counter += 1;
+        counter += 1;
+      } else {
+        searchCounter.textContent = '0 RESULTS'
       };
     });
 
@@ -147,9 +149,25 @@ searchButton.addEventListener("click", () => {
 
     if(counter > 6) {
       allCards += `
-        <div class="card__load">
-          <button class="card__load-more">Load More</button>
-        </div>
+      <div class="card__load">
+      <button class="card__load-more">
+        Load More
+        <svg
+          class="card__arrow"
+          width="12"
+          height="12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.526.22a.75.75 0 10-1.06 1.06l3.97 3.97H.75a.75.75 0 000 1.5h8.685l-3.97 3.97a.75.75 0 101.061 1.06l5.207-5.206a.748.748 0 000-1.148L6.526.22z"
+            fill="#335EEA"
+          />
+        </svg>
+      </button>
+    </div>
       `
     }
 
