@@ -1,4 +1,4 @@
-# :gear: LaslesVPN :gear:
+# :gear: API FETCH :gear:
 
 ## Resources
 * [Fonts](https://css-tricks.com/snippets/css/using-font-face/): [Web Fonts](https://drive.google.com/file/d/1xfE30WF5E-1YuJJ9owwn6E9PIXadzYSv/view?usp=sharing) + [Font Pack](https://fonts.google.com/specimen/Roboto?preview.text_type=custom)
@@ -26,7 +26,7 @@
 - The API was build with Json-Server and it can watch it with **json-server --watch db.json** command in ***localhost:3000 port***
 
 
-## Authors :book:
+## Author :book:
 
 **Roberto Palacios** :computer: :man: 
 
