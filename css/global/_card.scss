@@ -123,7 +123,13 @@
     display: flex;
     justify-content: center;
   }
+  &__arrow {
+    position: absolute;
+    right: 25px;
+    top: 28px;
+  }
   &__load-more {
+    position: relative;
     height: 65px;
     border-radius: 5px;
     width: 87%;

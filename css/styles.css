@@ -573,7 +573,14 @@
   justify-content: center;
 }
 
+.card__arrow {
+  position: absolute;
+  right: 25px;
+  top: 28px;
+}
+
 .card__load-more {
+  position: relative;
   height: 65px;
   border-radius: 5px;
   width: 87%;
