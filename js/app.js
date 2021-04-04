@@ -112,7 +112,7 @@ searchButton.addEventListener("click", () => {
 
         counter += 1;
       } else {
-        searchCounter.textContent = '0 RESULTS'
+        searchCounter.textContent = '0 RESULTS';
       };
     });
 
