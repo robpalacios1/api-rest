@@ -62,64 +62,101 @@ searchButton.addEventListener("click", () => {
 
       if(card.sipnosis.includes(searchContent.value)) {
 
-        counter =  counter + 1;
-
-      allCards += `
-        <div class="card__main-card">
-          <div class="card__main-image">
-            <div class="card__image">
-              <img src="${card.image}" alt="${card.image}"/>
-              <div class="card__price">
-                <a href="#" class="card__price-link"
-                  ><button class="card__price-button">${card.price}</button></a
-                >
+        if(counter <= 5) {
+          allCards += `
+            <div class="card__main-card">
+              <div class="card__main-image">
+                <div class="card__image">
+                  <img src="${card.image}" alt="${card.image}"/>
+                  <div class="card__price">
+                    <a href="#" class="card__price-link"
+                      ><button class="card__price-button">${card.price}</button></a
+                    >
+                  </div>
+                  <div class="card__favorite">
+                    <a href="#"><i class="fas fa-star"></i></a>
+                  </div>
+                </div>
               </div>
-              <div class="card__favorite">
-                <a href="#"><i class="fas fa-star"></i></a>
+    
+              <div class="card__bottom">
+                <div class="card__title">
+                  <h2>${card.title}</h2>
+                </div>
+    
+                <div class="card__sipnosis">
+                  <span
+                    >${card.sipnosis}...</span
+                  >
+                </div>
+    
+                <hr class="card__hr" />
+    
+                <div class="card__main-footer">
+                  <div class="card__avatar">
+                    <img src="${card.avatar}" alt="${card.avatar}" />
+                  </div>
+    
+                  <div class="card__name">
+                    <h3>${card.name}</h3>
+                  </div>
+    
+                  <div class="card__date">
+                    <h3>${card.date}</h3>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+        `;
+        }
 
-          <div class="card__bottom">
-            <div class="card__title">
-              <h2>${card.title}</h2>
-            </div>
-
-            <div class="card__sipnosis">
-              <span
-                >${card.sipnosis}...</span
-              >
-            </div>
-
-            <hr class="card__hr" />
-
-            <div class="card__main-footer">
-              <div class="card__avatar">
-                <img src="${card.avatar}" alt="${card.avatar}" />
-              </div>
-
-              <div class="card__name">
-                <h3>${card.name}</h3>
-              </div>
-
-              <div class="card__date">
-                <h3>${card.date}</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-    `;
+      counter += 1;
       };
     });
-    cardContent.innerHTML = allCards + '</div>';
+
+    if(counter == 0) {
+      cardContent.innerHTML = `
+      <div class="card__not-found">
+      <div class="card__left">
+        <div class="card__title-image">
+          <h2>Uh oh.</h2>
+        </div>
+    
+        <div class="card__subtitle">
+          <span
+            >We ran into an issue, but don't worry, <br />
+            we'll take care of it for sure</span
+          >
+        </div>
+        <div class="card__button-align">
+          <button class="card__button-safety">Back to safety</button>
+        </div>
+      </div>
+    
+      <div class="card__right">
+        <div class="card__image-not">
+          <img src="./assets/not-found.png" alt="not found" />
+        </div>
+      </div>
+    </div>
+      `;
+      return;
+    }
+
+    allCards += '</div>';
+
+    if(counter > 6) {
+      allCards += `
+        <div class="card__load">
+          <button class="card__load-more">Load More</button>
+        </div>
+      `
+    }
+
+    cardContent.innerHTML = allCards
     searchCounter.textContent = `${counter} RESULTS`;
   })
   .catch(error => {
     console.log(error)
   })
 })
-
-
-
-
-
