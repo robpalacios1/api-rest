@@ -678,7 +678,7 @@
 
 .card__footer-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card__avatar-desktop {
@@ -724,10 +724,18 @@
   color: #abbcd5;
 }
 
+.card__link {
+  color: #abbcd5;
+}
+
 .card__image-desktop {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.card__image {
+  border-radius: 5px;
 }
 
 .card__reference-desktop {

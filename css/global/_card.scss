@@ -216,7 +216,7 @@
   }
   &__footer-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   &__avatar-desktop {
     display: flex;
@@ -256,10 +256,16 @@
     margin: 0 5px;
     color: #abbcd5;
   }
+  &__link {
+    color: #abbcd5;
+  }
   &__image-desktop {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+  }
+  &__image {
+    border-radius: 5px;
   }
   &__reference-desktop {
     text-align: center;

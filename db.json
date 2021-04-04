@@ -15,7 +15,7 @@
         "price": "$60/MON",
         "image": "https://picsum.photos/300/200",
         "title": "Section 1.10.32 of de Finibus Bonorum et Malorum",
-        "sipnosis": "when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "sipnosis": "when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap. ",
         "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
         "name": "Karrie Dorris",
         "date": "FEB 05"
@@ -25,7 +25,7 @@
         "price": "$35/MON",
         "image": "https://picsum.photos/300/200",
         "title": "1914 translation by H. Rackham",
-        "sipnosis": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "sipnosis": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
         "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
         "name": "Crispian Shirley",
         "date": "MAR 14"
@@ -55,7 +55,7 @@
         "price": "$57/MON",
         "image": "https://picsum.photos/300/200",
         "title": "What is Lorem Ipsum?",
-        "sipnosis": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "sipnosis": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a .",
         "avatar": "https://randomuser.me/api/portraits/women/3.jpg",
         "name": "Dixie Silvia",
         "date": "JUN 14"
@@ -105,7 +105,7 @@
         "price": "$40/MON",
         "image": "https://picsum.photos/300/200",
         "title": "Lorem ipsum dolor sit amet",
-        "sipnosis": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
+        "sipnosis": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
         "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
         "name": "Patsy Alger",
         "date": "OCT 16"
