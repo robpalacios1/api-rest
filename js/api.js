@@ -23,7 +23,7 @@ searchButton.addEventListener("click", () => {
 
       // filter search.
       if(card.sipnosis.includes(searchContent.value)) {
-        
+
         if(counter <= 5) {
           allCards += drawCard(card);
         }
@@ -79,20 +79,12 @@ function loadAll() {
 // function lo load blog when click card.
 function showBlog() {
 
-  console.log('entró');
-
   document.querySelectorAll('.js-card-desktop').forEach(card => {
-
     card.addEventListener('click', (e)=>{
-
       e.preventDefault();
-      
       cardContent.innerHTML = drawBlog(myDictionary[`n${e.target.dataset.id}`]);
     })
   })
-
-
-
 }
 
 // function to draw the blog
