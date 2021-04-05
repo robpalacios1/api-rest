@@ -3,67 +3,77 @@ let cardContent = document.querySelector('.js-card-container');
 let searchContent = document.querySelector('.js-search');
 let searchButton = document.querySelector('.js-search-button');
 let searchCounter = document.querySelector('.js-search-counter');
+let article = document.querySelector('.js-article');
 let myDictionary = {}
 let cardsArray = '<div class="card__content">';
 
 
-searchButton.addEventListener("click", () => {
-
-  // call an API within Json-server.
-  const url = ('http://localhost:3000/cards');
-  let counter = 0;
-
-  fetch(url)
-  .then(response => response.json() )
-  .then(cards => {
-
-    let allCards = '<div class="card__content">';
-    cardsArray = allCards;
-    cards.forEach(card => {
-
-      // filter search.
-      if(card.sipnosis.includes(searchContent.value)) {
-
-        if(counter <= 5) {
-          allCards += drawCard(card);
-        }
-
-        cardsArray += drawCard(card);
-
-        myDictionary[`n${card.id}`] = card;
-        counter += 1;
-
-      } else {
-        searchCounter.textContent = 'no results';
-      };
-    });
-
-    //show card not-found.
-    if(counter == 0) {
-      cardContent.innerHTML = drawNotFound();
-      return;
-    }
-
-    allCards += '</div>';
-    cardsArray += '</div>';
-
-    cardContent.innerHTML = allCards;
-    searchCounter.textContent = `${counter} RESULTS`;
-
-    // show button to load more.
-    if(counter > 6) {
-      allCards += showButton();
-      cardContent.innerHTML = allCards;
-      loadAll();
-    }
-
-    showBlog();
-
-  })
-  .catch(error => {
-    console.log(error)
-  })
+//
+searchButton.addEventListener("click", ()=>{startScreen();});
+article.addEventListener('click', (e) => {
+  e.preventDefault();
+  startScreen();
 })
+
+function startScreen() {
+
+    // call an API within Json-server.
+    const url = ('http://localhost:3000/cards');
+    let counter = 0;
+  
+    fetch(url)
+    .then(response => response.json() )
+    .then(cards => {
+  
+      let allCards = '<div class="card__content">';
+      cardsArray = allCards;
+      cards.forEach(card => {
+  
+        // filter search.
+        if(card.sipnosis.includes(searchContent.value)) {
+  
+          if(counter <= 5) {
+            allCards += drawCard(card);
+          }
+  
+          cardsArray += drawCard(card);
+  
+          myDictionary[`n${card.id}`] = card;
+          counter += 1;
+  
+        } else {
+          searchCounter.textContent = 'no results';
+        };
+      });
+  
+      //show card not-found.
+      if(counter == 0) {
+        cardContent.innerHTML = drawNotFound();
+        return;
+      }
+  
+      allCards += '</div>';
+      cardsArray += '</div>';
+  
+      cardContent.innerHTML = allCards;
+      searchCounter.textContent = `${counter} RESULTS`;
+  
+      // show button to load more.
+      if(counter > 6) {
+        allCards += showButton();
+        cardContent.innerHTML = allCards;
+        loadAll();
+      }
+  
+      showBlog();
+  
+    })
+    .catch(error => {
+      console.log(error)
+    })
+
+}
+
 
 // function to show another card when push the botton.
 function loadAll() {
@@ -261,3 +271,5 @@ function showButton() {
 </div>
 `;
 }
+
+startScreen();
