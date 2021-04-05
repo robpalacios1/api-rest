@@ -21,7 +21,7 @@
 
 - The SVG images was optimized with the following website: https://jakearchibald.github.io/svgomg/
 
-- The URL of the project is as follows: https://landing-laslesvpn.netlify.app/
+- The URL of the project is as follows: https://api-rest.netlify.app/
 
 - The API was build with Json-Server and it can watch it with **json-server --watch db.json** command in ***localhost:3000 port***
 
