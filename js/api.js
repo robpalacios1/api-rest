@@ -5,8 +5,11 @@ let searchButton = document.querySelector('.js-search-button');
 let searchCounter = document.querySelector('.js-search-counter');
 let cardsArray = '<div class="card__content">';
 
+
+
 searchButton.addEventListener("click", () => {
 
+  // call an API within Json-server.
   const url = ('http://localhost:3000/cards');
   let counter = 0;
 
@@ -19,54 +22,11 @@ searchButton.addEventListener("click", () => {
     console.log(searchContent.value);
     cards.forEach(card => {
 
+      // filter search.
       if(card.sipnosis.includes(searchContent.value)) {
 
         if(counter <= 5) {
-          allCards += `
-            <div class="card__main-card">
-              <div class="card__main-image">
-                <div class="card__image">
-                  <img src="${card.image}" alt="${card.image}"/>
-                  <div class="card__price">
-                    <a href="#" class="card__price-link"
-                      ><button class="card__price-button">${card.price}</button></a
-                    >
-                  </div>
-                  <div class="card__favorite">
-                    <a href="#"><i class="fas fa-star"></i></a>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="card__bottom">
-                <div class="card__title">
-                  <h2>${card.title}</h2>
-                </div>
-    
-                <div class="card__sipnosis">
-                  <span
-                    >${card.sipnosis}...</span
-                  >
-                </div>
-    
-                <hr class="card__hr" />
-    
-                <div class="card__main-footer">
-                  <div class="card__avatar">
-                    <img src="${card.avatar}" alt="${card.avatar}" />
-                  </div>
-    
-                  <div class="card__name">
-                    <h3>${card.name}</h3>
-                  </div>
-    
-                  <div class="card__date">
-                    <h3>${card.date}</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-        `;
+          allCards += drawCard(card);
         }
 
         cardsArray += `
@@ -121,6 +81,7 @@ searchButton.addEventListener("click", () => {
       };
     });
 
+    //show card not-found.
     if(counter == 0) {
       cardContent.innerHTML = `
       <div class="card__not-found">
@@ -154,6 +115,7 @@ searchButton.addEventListener("click", () => {
 
     cardsArray += '</div>';
 
+    // show button to load more.
     if(counter > 6) {
       allCards += `
         <div class="card__load">
@@ -190,6 +152,7 @@ searchButton.addEventListener("click", () => {
   })
 })
 
+// function to show another card when push the botton.
 function loadAll() {
   let loadMore = document.querySelector('.js-load-more');
 
@@ -197,3 +160,142 @@ function loadAll() {
     cardContent.innerHTML = cardsArray;
   });
 }
+
+// function lo load blog when click card.
+function showBlog() {
+  document.querySelector('.js-card-desktop').forEach(card => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      cardContent.innerHTML
+      return `
+
+      `
+    })
+  });
+}
+
+// function to draw the blog
+function drawBlog({id, price, image, title, sipnosis, avatar, name, date}) {
+  return `
+  <div class="card__desktop">
+  <div class="card__title-desktop">
+    <h1>
+      ${title}
+    </h1>
+  </div>
+
+  <div class="card__sipnosis-desktop">
+    <span
+      >${sipnosis}</span
+    >
+  </div>
+
+  <div class="card__footer-desktop">
+    <div class="card__footer-info">
+      <div class="card__avatar-desktop">
+        <img src="${image}" alt="${image}" />
+      </div>
+
+      <div class="card__name-desktop">
+        <h3>Alive Cooper</h3>
+        <div class="card__published-desktop">
+          <h4>Published on ${date}, 2019</h4>
+        </div>
+      </div>
+
+      <div class="card__networks-desktop">
+        <div class="card__link-desktop">
+          <a href="#"><i class="fab fa-instagram card__link"></i></a>
+        </div>
+
+        <div class="card__link-desktop">
+          <a href="#"><i class="fab fa-facebook card__link"></i></a>
+        </div>
+
+        <div class="card__link-desktop">
+          <a href="#"><i class="fab fa-twitter card__link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card__image-desktop">
+      <img class="card__image" src="${image}" alt="${image}" />
+    </div>
+
+    <div class="card__reference-desktop">
+      <span>This is a caption on this photo for reference</span>
+    </div>
+
+    <div class="card__info-desktop">
+      <span
+        >Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?</span
+      >
+    </div>
+  </div>
+</div>
+  `
+}
+
+//function to draw the card
+function drawCard({id, price, image, title, sipnosis, avatar, name, date}) {
+  return `
+    <div class="card__main-card">
+      <a class="card__link js-card-desktop" href="#" data-id="${id}">
+        <div class="card__main-image">
+          <div class="card__image">
+            <img src="${image}" alt="${image}"/>
+              <div class="card__price">
+                <a href="#" class="card__price-link"
+                    ><button class="card__price-button">${price}</button></a
+                >
+                </div>
+                <div class="card__favorite">
+                  <a href="#"><i class="fas fa-star"></i></a>
+                </div>
+              </div>
+          </div>
+
+          <div class="card__bottom">
+            <div class="card__title">
+              <h2>${title}</h2>
+            </div>
+    
+            <div class="card__sipnosis">
+              <span
+                >${sipnosis}...</span
+                >
+            </div>
+    
+            <hr class="card__hr" />
+    
+            <div class="card__main-footer">
+              <div class="card__avatar">
+                <img src="${avatar}" alt="${avatar}" />
+              </div>
+    
+              <div class="card__name">
+                <h3>${name}</h3>
+              </div>
+    
+              <div class="card__date">
+                <h3>${date}</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+  `
+}
+
